@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>create account</title>
+</head>
+
+<body>
+<link rel="stylesheet" href="bankStyle.css"></body></link>	
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="http://localhost:8080/bnk/login.html">Login</a></li>
+  <li><a href="http://localhost:8080/bnk/createAccount.html">Create Account</a></li>
+  <li style="position: absolute; bottom: 0;"><img src="bnk.png"></li>
+</ul>
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">	
+
+<form action="http://localhost:8080/bnk/createAccount.jsp" method="Post" style="font-family: sans-serif; font-size: 11px">
+
+NAME: <input required type="text" name="name" style="position: absolute; left: 500px;"><br><br>
+GENDER: <select required name="gender" style="position: absolute; left: 500px;">
+  <option value="male">male</option>
+  <option value="female">female</option>
+</select><br><br>
+ADDRESS: <input required type="text" name="adress" style="position: absolute; left: 500px;"><br><br>
+ACCOUNT TYPE: <select name="accType" style="position: absolute; left: 500px;">
+  <option value="current">current</option>
+  <option value="savings">savings</option>
+</select><br><br>
+USERNAME: <input required type="text" name="username" style="position: absolute; left: 500px; "><br><br>
+PASSWORD: <input required type="password" name="password" style="position: absolute; left: 500px; "><br><br>
+CONFIRM PASSWORD: <input required type="password" name="password2" style="position: absolute; left: 500px;"><br><br>
+
+<input type="submit" style="position: absolute; left: 500px;">
+
+</form>
+</div>
+
+</body>
+</html>
